@@ -1,0 +1,28 @@
+{
+  "name": "tlbx",
+  "description": "developer's toolbox",
+  "version": "0.0.0",
+  "author": "Dewa Widyakumara <widyakumara@gmail.com>",
+  "private": true,
+  "license": "UNLICENSED",
+  "type": "module",
+  "packageManager": "bun@1.4.0",
+  "allowScripts": {
+    "esbuild": true
+  },
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build",
+    "check": "astro check",
+    "dev": "astro dev",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^7.3.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/bun": "^1.4.1",
+    "typescript": "^6.0.3"
+  }
+}
