@@ -1,5 +1,5 @@
 ---
-import { PageHead, PageMeta } from "@layout";
+import { PageMeta } from "@layout";
 import "/src/styles/index.css";
 
 const site = {
@@ -18,9 +18,28 @@ const title = props.title ? `${props.title} • ${site.name}` : site.name;
     <title>{title}</title>
   </head>
   <body class:list={["page", props.type]}>
-    <PageHead name={site.name} />
-    <div id="body">
-      <slot />
+    <div class="navbar fixed top-0 w-full z-50">
+      <div class="flex-1">
+        <a class="btn btn-ghost text-xl">daisyUI</a>
+      </div>
+    </div>
+
+    <div class="drawer drawer-end lg:drawer-open md:drawer-open">
+      <input id="drawer-left" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <div class="drawer lg:drawer-open md:drawer-open">
+          <input id="drawer-left" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content">
+            <pre>main</pre>
+          </div>
+          <div class="drawer-side">
+            <pre>left</pre>
+          </div>
+        </div>
+      </div>
+      <div class="drawer-side">
+        <pre>RIGHT</pre>
+      </div>
     </div>
   </body>
 </html>
