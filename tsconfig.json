@@ -4,7 +4,11 @@
   "exclude": [".dist"],
   "compilerOptions": {
     "types": ["bun"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact",
     "paths": {
+      "@styles": ["./src/styles/index.css"],
+      "@controls": ["./src/components/controls/index.ts"],
       "@layout": ["./src/components/layout/index.ts"]
     }
   }

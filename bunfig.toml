@@ -8,9 +8,11 @@ minimumReleaseAge = 172800
 
 minimumReleaseAgeExcludes = [
   "@astrojs/check",
+  "@astrojs/preact",
   "@types/bun",
   "@types/node",
   "astro",
   "bun-types",
+  "preact",
   "typescript",
 ]
