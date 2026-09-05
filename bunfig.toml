@@ -9,10 +9,14 @@ minimumReleaseAge = 172800
 minimumReleaseAgeExcludes = [
   "@astrojs/check",
   "@astrojs/preact",
+  "@preact/preset-vite",
+  "@preact/signals",
+  "@preact/signals-core",
   "@types/bun",
   "@types/node",
   "astro",
   "bun-types",
   "preact",
+  "preact-render-to-string",
   "typescript",
 ]
