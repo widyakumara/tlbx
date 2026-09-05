@@ -9,6 +9,7 @@ minimumReleaseAge = 172800
 minimumReleaseAgeExcludes = [
   "@astrojs/check",
   "@astrojs/preact",
+  "@kamod-ch/ui",
   "@types/bun",
   "@types/node",
   "astro",
