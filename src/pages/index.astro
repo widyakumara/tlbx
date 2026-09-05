@@ -1,9 +1,37 @@
 ---
-import { Counter } from "@controls";
 import { Page } from "@layout";
 ---
 
 <Page type="home">
-  <h1>home</h1>
-  <Counter client:load />
+  <h1>kamod</h1>
+  <ul>
+    {
+      ["05", "08", "11", "15"].map((num) => {
+        const link = `https://kamod-ch.github.io/kamod-ui/blocks/sidebar/sidebar-${num}/preview/`;
+        return (
+          <li>
+            <a href={link} target="_blank">
+              Sidebar {num}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+  <hr />
+  <ul>
+    {
+      [...Array(16).keys()].map((_, i) => {
+        const num = String(i + 1).padStart(2, "0");
+        const link = `https://kamod-ch.github.io/kamod-ui/blocks/sidebar/sidebar-${num}/preview/`;
+        return (
+          <li>
+            <a href={link} target="_blank">
+              Sidebar {num}
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
 </Page>
