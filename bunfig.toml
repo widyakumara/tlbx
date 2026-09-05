@@ -10,6 +10,8 @@ minimumReleaseAgeExcludes = [
   "@astrojs/check",
   "@astrojs/preact",
   "@kamod-ch/ui",
+  "@kamod-ch/themes",
+  "@preact/signals",
   "@types/bun",
   "@types/node",
   "astro",

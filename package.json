@@ -25,7 +25,9 @@
   },
   "dependencies": {
     "@astrojs/preact": "^6.0.5",
+    "@kamod-ch/themes": "^0.2.1",
     "@kamod-ch/ui": "^1.2.0",
+    "@preact/signals": "^2.11.2",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.1",
     "preact": "^10.29.8",

@@ -1,6 +1,12 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
+/* @import "@kamod-ch/ui/theme.css"; */
+/* @import "@kamod-ch/themes/theme.css"; */
+/* @import "@kamod-ch/themes/tokens.css"; */
+/* @import "@kamod-ch/themes/brands.css"; */
+/* @import "@kamod-ch/themes/brands/kamod.css"; */
+@import "@kamod-ch/themes/brands/ocean.css";
 
 :root {
   --coba: var(--color-sky-500);
