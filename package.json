@@ -19,9 +19,15 @@
     "dev": "astro dev",
     "preview": "astro preview"
   },
+  "overrides": {
+    "react": "npm:@preact/compat@latest",
+    "react-dom": "npm:@preact/compat@latest"
+  },
   "dependencies": {
+    "@astrojs/preact": "^6.0.5",
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.1",
+    "preact": "^10.29.8",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

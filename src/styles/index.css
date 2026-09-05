@@ -1,4 +1,7 @@
-/* @import "tailwindcss/index"; */
 @import "tailwindcss/preflight";
 @import "tailwindcss/theme";
-/* @import "tailwindcss/utilities"; */
+@import "tailwindcss/utilities";
+
+:root {
+  --coba: var(--color-sky-500);
+}
