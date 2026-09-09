@@ -1,5 +1,5 @@
 import { useState } from "preact/hooks";
-import "./styles.css";
+import "./style.css";
 
 export function Counter() {
   const [count, setCount] = useState(0);

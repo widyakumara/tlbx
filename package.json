@@ -25,11 +25,8 @@
   },
   "dependencies": {
     "@astrojs/preact": "^6.0.5",
-    "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.3.1",
-    "daisyui": "^5.7.28",
-    "preact": "^10.29.8",
-    "tailwindcss": "^4.3.3"
+    "preact": "^10.29.8"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
