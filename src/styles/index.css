@@ -1,7 +1,27 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/theme";
 @import "tailwindcss/utilities";
+@plugin "daisyui";
 
 :root {
   --coba: var(--color-sky-500);
+}
+
+#root {
+}
+
+#body {
+  @apply drawer lg:drawer-open;
+}
+
+#main {
+  @apply drawer-content;
+}
+
+#left {
+  @apply drawer-side;
+}
+
+#right {
+  @apply drawer-side;
 }
