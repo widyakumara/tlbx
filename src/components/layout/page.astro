@@ -1,6 +1,6 @@
 ---
-import { PageMeta } from "@layout";
-import "/src/styles/index.css";
+import { PageHead, PageMenu, PageMeta, PageSide } from "@layout";
+import "./index.css";
 
 const site = {
   name: "tlbx",
@@ -18,37 +18,14 @@ const title = props.title ? `${props.title} • ${site.name}` : site.name;
     <title>{title}</title>
   </head>
   <body class:list={["page", props.type]}>
-    <!-- header -->
-    <div id="head" class="navbar sticky top-0 w-full">
-      <div class="navbar-start">
-        <label
-          for="drawer"
-          class="btn btn-square btn-ghost drawer-button md:hidden">
-          SBO
-        </label>
-        <pre>navbar left</pre>
-      </div>
-      <div class="navbar-center flex-1">
-        <pre>navbar center</pre>
-      </div>
-      <div class="navbar-end">
-        <pre>navbar right</pre>
-      </div>
-    </div>
-    <!-- /header -->
-    <div id="body" class="drawer md:drawer-open">
-      <input type="checkbox" id="drawer" class="drawer-toggle" />
-      <div class="drawer-content">
-        <main>isi utama</main>
-        <aside class="sticky top-0"></aside>
-      </div>
-      <div class="drawer-side">
-        <label
-          for="drawer"
-          class="md:hidden drawer-overlay"
-          aria-label="Close menu">SBC</label
-        >
-        <pre>this is sidebar</pre>
+    <div id="root">
+      <PageHead site={site} />
+      <div id="body">
+        <div id="main">
+          <slot />
+        </div>
+        <PageMenu />
+        <PageSide />
       </div>
     </div>
   </body>

@@ -15,7 +15,7 @@ export default [
     },
   },
   {
-    ignores: [".astro/*", ".dist/*", "**/*.d.ts"],
+    ignores: [".astro/*", ".dist/*"],
   },
   {
     rules: {

@@ -1,11 +1,10 @@
-@reference "@styles";
-
 .counter {
-  @apply m-4 p-4 rounded;
+  border: 1px solid red;
+  margin: 1em;
+  padding: 1em;
   border: 1px solid var(--color-red-500);
   button {
-    @apply px-2 py-1;
-    color: var(--coba);
+    color: red;
     border: 1px solid var(--color-green-500);
   }
 }
