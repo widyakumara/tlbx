@@ -5,5 +5,11 @@ import { Page } from "@layout";
 
 <Page type="home">
   <h1>home</h1>
+  <hr />
   <Counter client:load />
+  {
+    [...Array(100)].map((_, i) => {
+      return <p>{i}</p>;
+    })
+  }
 </Page>

@@ -1,6 +1,5 @@
 // @ts-check
 import preact from "@astrojs/preact";
-import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
@@ -20,15 +19,15 @@ export default defineConfig({
   },
   integrations: [preact({ compat: true })],
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [],
     build: {
       emptyOutDir: true,
       rollupOptions: {
         output: {
           hashCharacters: "base36",
           assetFileNames: "inc/[hash:8].[ext]",
-          chunkFileNames: "inc/[hash:8].js",
-          entryFileNames: "inc/[hash:8].js",
+          chunkFileNames: "inc/c[hash:7].js",
+          entryFileNames: "inc/e[hash:7].js",
         },
       },
     },
