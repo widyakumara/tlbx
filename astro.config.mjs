@@ -1,4 +1,5 @@
 // @ts-check
+import solidJs from "@astrojs/solid-js";
 import { defineConfig } from "astro/config";
 
 export default defineConfig({
@@ -16,6 +17,7 @@ export default defineConfig({
     format: "file",
     assets: "inc",
   },
+  integrations: [solidJs()],
   vite: {
     plugins: [],
     build: {
