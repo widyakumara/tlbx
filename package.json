@@ -11,6 +11,8 @@
     "esbuild": true
   },
   "scripts": {
+    "fmt": "biome format --write .",
+    "lint": "biome lint .",
     "astro": "astro",
     "build": "astro build",
     "check": "astro check",
