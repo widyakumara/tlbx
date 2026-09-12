@@ -1,5 +1,4 @@
 // @ts-check
-
 import solidJs from "@astrojs/solid-js";
 import { defineConfig } from "astro/config";
 
@@ -9,19 +8,16 @@ export default defineConfig({
     port: 9999,
     allowedHosts: ["demo.widyakumara.com"],
   },
-
   devToolbar: {
     enabled: false,
   },
-
   outDir: "./.dist",
-
   build: {
     inlineStylesheets: "never",
     format: "file",
     assets: "inc",
   },
-
+  integrations: [solidJs()],
   vite: {
     plugins: [],
     build: {
@@ -36,6 +32,4 @@ export default defineConfig({
       },
     },
   },
-
-  integrations: [solidJs()],
 });

@@ -11,8 +11,8 @@
     "esbuild": true
   },
   "scripts": {
-    "fmt": "biome format --write .",
-    "lint": "biome lint .",
+    "fmt": "prettier --write .",
+    "lint": "eslint .",
     "astro": "astro",
     "build": "astro build",
     "check": "astro check",
@@ -25,7 +25,17 @@
     "solid-js": "^1.9.15"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.5.13",
-    "lefthook": "^2.1.12"
+    "@astrojs/check": "^0.9.10",
+    "@eslint/js": "^10.0.1",
+    "@types/bun": "^1.4.2",
+    "@typescript-eslint/parser": "^8.70.0",
+    "eslint": "^10.10.0",
+    "eslint-plugin-astro": "^3.1.0",
+    "globals": "^17.12.0",
+    "lefthook": "^2.1.12",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^1.0.0",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.70.0"
   }
 }
