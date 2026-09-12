@@ -20,7 +20,9 @@
     "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^7.3.2"
+    "@astrojs/solid-js": "^7.0.2",
+    "astro": "^7.3.2",
+    "solid-js": "^1.9.15"
   },
   "devDependencies": {
     "@biomejs/biome": "2.5.13",
